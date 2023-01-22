@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title%} Mlapp{% endblock %}
+{% block body %}
+
+<main role="main"></br>
+    <h3 align ="center">The prediction result based on your requirements</h3>
+    <div class="container my-5">
+        
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/media/shop/images/phon.jpg" alt="" width="385px" height="275px" class="rounded-circle"> 
+            </div>
+            <div class="col-md-6">
+                
+                <h5>Battery power : <span class="text-info"> {{battery_power}}  mAh  </span> </h5>
+                <h5>Internal memory : <span class="text-info"> {{int_memory}}  gb </span> </h5>
+                <h5>Mobile weight : <span class="text-info"> {{mobile_wt}}  gram </span> </h5>
+                <h5>Ram : <span class="text-info"> {{ram}}  megabyte or {{ramg}} GB </span> </h5>
+                <h5>Dual sim : <span class="text-dark"> {{dual_sim}} (Default) </span> </h5>
+                <h5>Talk time : <span class="text-dark"> {{talk_time}}  hour  (Default)</span> </h5>
+                <h5>Touch screen : <span class="text-dark"> {{touch_screen}} (Default) </span> </h5>
+                <h5>Wifi : <span class="text-dark"> {{wifi}} (Default) </span> </h5>
+                </br>
+                <h5>Predicted Mobile price range is<span class="text-success"> "{{result}} tk"</span> </h5>
+            </br> 
+            </div>
+        </div>
+        <div class="d-flex justify-content-center row">
+            <a href="/mlapp/mlapp" class="btn btn-warning mx-3 "><b>Go Back to Mlapp</b></a>
+    </div>
+   </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+  
+      <hr>
+  
+    </div> <!-- /container -->
+  
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
+  </html>
+
+{% endblock %}
