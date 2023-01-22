@@ -19,7 +19,7 @@ def mlapp(request):
         b = np.array(y, dtype=float)
         y_pred = model.predict(b)
         
-        n = y_pred[0]*3500
+        n = y_pred[0]*35000
         y_pred =int(n) 
         ramg = int(ramg)  
             
